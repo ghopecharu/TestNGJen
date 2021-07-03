@@ -15,7 +15,7 @@ import org.testng.asserts.SoftAssert;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
-public class BaseClass {
+public class BaseClass1 {
 	
 public static WebDriver driver;
 public static ExtentReports report;

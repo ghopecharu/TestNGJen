@@ -12,9 +12,9 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-import test.LoginTest2;
+import test.LoginTest3;
 
-public class LoginPage {
+public class LoginPage1 {
 	
 WebDriver driver;
 ExtentReports  report;
@@ -41,11 +41,11 @@ WebElement Error;
 
 //=========Constructor===================
 
-public LoginPage() {
+public LoginPage1() {
 	
-	driver=LoginTest2.driver;
-	report=LoginTest2.report;
-	test=LoginTest2.test;
+	driver=LoginTest3.driver;
+	report=LoginTest3.report;
+	test=LoginTest3.test;
 	PageFactory.initElements(driver,this);
 	
 }
@@ -76,7 +76,7 @@ public void Login(String uname, String upass) {
   test.log(LogStatus.PASS, "Successfully clicked on the login link");
   
   String ActMsg= Error.getText();
-  String ExpMsg= "Please enter a valid email address";
+  String ExpMsg= "Please enter a valid email addresss.";
   
 //  WebElement Error =driver.findElement(By.id("msg_box"));
   
